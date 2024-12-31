@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,28 +45,372 @@
             </div>
         </div>
         <div class="row mt-5">
-          <div class="col-md-12">
-            <h1 align="left" id="installation">Installation</h1>
-            <p class="lead">
-              <ol>
-                <li>Download the latest ISO file</li>
-                <li>Plug in a thumb drive that is <b>AT LEAST 8GB</b></li>
-                <li>Using a third-party software (E. g.: <a href="https://rufus.ie/en/">Rufus</a>) create a bootable USB drive</li>
-                <li>After the USB drive is ready, plug it into a computer</li>
-                <li>In the BIOS/UEFI change the boot-order, so the computer boots from the USB drive</li>
-                <li>After the computer has restarted, continue with the installation. <b>The computer will restart several times</b></li>
-              </ol>
-              <font style="font-size: 20px;"><b>IMPORTANT:</b> <b>DO NOT</b> remove the installation media (USB drive) until the computer has booted into the main interface of NeuraSys</font>
-            </p>
+          <div class="col-md-6 text-center mt-5">
+            <h2>Navigation</h2><br><br>
+            <a href="#installation" class="mt-5">Installation</a> <br><br><br><br>
+            <a href="#help" class="mt-5">Help</a><br><br>
+            <a href="#time" class="mt-5">Time</a><br><br>
+            <a href="#list" class="mt-5">List</a><br><br>
+            <a href="#update" class="mt-5">Update</a><br><br><br><br>
+
+
+            <a href="#create" class="mt-5">Create</a><br><br>
+            <a href="#delete" class="mt-5">Delete</a><br><br>
+            <a href="#read" class="mt-5">Read</a><br><br>
+            <a href="#openimg" class="mt-5">OpenIMG</a><br><br>
+            <a href="#openmp" class="mt-5">OpenMP</a><br><br>
+            <a href="#edit" class="mt-5">Edit</a><br><br>
+            <a href="#rename" class="mt-5">Rename</a><br><br>
+            <a href="#run" class="mt-5">Run</a><br><br>
+            <a href="#download" class="mt-5">Download</a><br><br>
+            <a href="#copy" class="mt-5">Copy</a><br><br><br><br>
+
+
+            <a href="#createdir" class="mt-5">CreateDir</a><br><br>
+            <a href="#deletedir" class="mt-5">DeleteDir</a><br><br>
+            <a href="#changedir" class="mt-5">ChangeDir</a><br><br>
+            <a href="#backdir" class="mt-5">BackDir</a><br><br>
+            <a href="#currentdir" class="mt-5">CurrentDir</a><br><br><br><br>
+
+            <a href="#settings" class="mt-5">Settings (Coming Soon)</a><br><br>
+            <a href="#virtualization" class="mt-5">Virtualization</a><br><br>
+            <a href="#logout" class="mt-5">Logout</a><br><br>
+            <a href="#powershell" class="mt-5">Powershell</a><br><br>
+            <a href="#newwindow" class="mt-5">NewWindow</a><br><br>
+            <a href="#ssh" class="mt-5">SSH</a><br><br>
+            <a href="#monitoring" class="mt-5">Monitoring</a><br><br><br><br>
+
+            <a href="#clear" class="mt-5">Clear</a><br><br>
+            <a href="#shutdown" class="mt-5">Shutdown</a><br><br>
+            <a href="#restart" class="mt-5">Restart</a><br><br><br><br>
           </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-12">
-            <h1 align="left" id="commands">Commands</h1>
+          <div class="col-md-6">
+            <div class="row mt-5">
+              <h1 align="left" id="installation">Installation</h1>
+              <p class="lead">
+                <ol>
+                  <li>Download the latest ISO file</li>
+                  <li>Plug in a thumb drive that is <b>AT LEAST 8GB</b></li>
+                  <li>Using a third-party software (E. g.: <a href="https://rufus.ie/en/" target="_blank">Rufus</a>) create a bootable USB drive</li>
+                  <li>After the USB drive is ready, plug it into a computer</li>
+                  <li>In the BIOS/UEFI change the boot-order, so the computer boots from the USB drive</li>
+                  <li>After the computer has restarted, continue with the installation. <b>The computer will restart several times</b></li>
+                </ol>
+                <font style="font-size: 20px;"><b>IMPORTANT:</b> <b>DO NOT</b> remove the installation media (USB drive) until the computer has booted into the main interface of NeuraSys</font>
+              </p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="help">help</h3>
+              <p class="lead">Shows all the available commands</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">help</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="time">time</h3>
+              <p class="lead">Shows the current time based on your region</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">time</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="list">list</h3>
+              <p class="lead">Lists all items in the current directory</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">list</p>
+              <p style="font-size: 20px; font-weight: 400;">Notes:</p>
+              <p class="lead">Folders are highlighted in green</p>
+            </div>
+
+
+            <div class="row mt-5">
+              <h3 align="left" id="update">update</h3>
+              <p class="lead">Updates the operating system</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Name of the ISO file</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">update -> neurasys-3.0.0-24-ESD.iso</p>
+            </div>
+
+            
+
+
+
+
+
+
+
+
+
+            <div class="row mt-5">
+              <h3 align="left" id="create">create</h3>
+              <p class="lead">Creates a file with the specified name (including the extension) and content</p>
+              <p style="font-size: 20px; font-weight: 400;">Notes</p>
+              <p class="lead">You can use "\n" to create a new line</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Name of the file (with the extension)</p>
+              <p class="lead">Content of the file</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">create -> start.bat -> explorer.exe</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="delete">delete</h3>
+              <p class="lead">Deletes the specified file</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Name of the file</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">delete -> start.bat</p>
+            </div>
+
+
+            <div class="row mt-5">
+              <h3 align="left" id="read">read</h3>
+              <p class="lead">Shows the content of the specified files</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Name of the file</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">read -> important.txt</p>
+            </div>
+
+            
+            <div class="row mt-5">
+              <h3 align="left" id="openimg">openimg</h3>
+              <p class="lead">Opens the specified image file</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Name of the file</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">openimg -> neurasys.png</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="openmp">openmp</h3>
+              <p class="lead">Opens the specified MP3/4 file</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Name of the file</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">openmp -> video.mp4</p>
+            </div>
+
+
+            <div class="row mt-5">
+              <h3 align="left" id="edit">edit</h3>
+              <p class="lead">Edits the specified file's content</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Name of the file</p>
+              <p class="lead">Changes to be made</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">edit -> test.txt -> I love NeuraSys</p>
+              <p class="lead">edit -> test.txt -> &lt;1&gt; I love NeuraSys</p>
+            </div>
+
+
+            <div class="row mt-5">
+              <h3 align="left" id="rename">rename</h3>
+              <p class="lead">Renames the specified file to a new name</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Old name of the file</p>
+              <p class="lead">New name of the file</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">rename -> important.txt -> deletethis.txt</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="run">run</h3>
+              <p class="lead">Runs the specified file</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Name of the file</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">run -> start.bat</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="download">download</h3>
+              <p class="lead">Downloads the specified page or file</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">URL</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">download -> https://neurasys.net/</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="copy">copy</h3>
+              <p class="lead">Copies the specified file or folder to the specified folder</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">PATH for the file or folder that will be copied</p>
+              <p class="lead">PATH for the folder that the file (or folder) will be copied to</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">copy -> root\neurasys.txt -> root\folder</p>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="row mt-5">
+              <h3 align="left" id="createdir">createdir</h3>
+              <p class="lead">Creates a folder</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Name of the folder</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">createDir -> mcserver</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="deletedir">deletedir</h3>
+              <p class="lead">Deletes the specified folder</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Name of the folder</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">deleteDir -> mcserver</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="changedir">changedir</h3>
+              <p class="lead">Changes to the specified folder or drive</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Name of the file or drive</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">changeDir -> mcserver</p>
+              <p class="lead">changeDir -> E:\</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="backdir">backdir</h3>
+              <p class="lead">Goes to the parent folder</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">backDir</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="currentdir">currentdir</h3>
+              <p class="lead">Shows the path of the current directory</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">currentDir</p>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="row mt-5">
+              <h3 align="left" id="virtualization">virtualization</h3>
+              <p class="lead">Opens the Hyper-V manager panel</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">virtualization</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="logout">logout</h3>
+              <p class="lead">Logs out from the current user account</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">logout</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="powershell">powershell</h3>
+              <p class="lead">Starts a powershell command prompt</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">powershell</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="newwindow">newwindow</h3>
+              <p class="lead">Opens a new video of NeuraSys</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">newwindow</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="ssh">ssh</h3>
+              <p class="lead">Opens SSH management panel</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">Install SSH (Option 1) or Uninstall SSH (Option 2)</p>
+              <p style="font-size: 20px; font-weight: 400; margin-left: 50px;">Install SSH (Option 1):</p>
+              <p class="lead" style="margin-left: 50px;">Password for remote access</p>
+              <p style="font-size: 20px; font-weight: 400; margin-left: 50px;">Uninstall SSH (Option 2):</p>
+              <p class="lead" style="margin-left: 50px;">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">ssh -> 1 -> neurasys</p>
+              <p class="lead">ssh -> 2</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="monitoring">monitoring</h3>
+              <p class="lead">Opens monitoring panel</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">System information (Option 1) or System usage (Option 2) or Battery status (Option 3)</p>
+              <p style="font-size: 20px; font-weight: 400; margin-left: 50px;">System information (Option 1):</p>
+              <p class="lead" style="margin-left: 50px;">None</p>
+              <p style="font-size: 20px; font-weight: 400; margin-left: 50px;">System usage (Option 2):</p>
+              <p class="lead" style="margin-left: 50px;">None</p>
+              <p style="font-size: 20px; font-weight: 400; margin-left: 50px;">Battery status (Option 3):</p>
+              <p class="lead" style="margin-left: 50px;">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">monitoring -> 1</p>
+              <p class="lead">monitoring -> 2</p>
+              <p class="lead">monitoring -> 3</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="clear">clear</h3>
+              <p class="lead">Clears the console</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">clear</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="shutdown">shutdown</h3>
+              <p class="lead">Shuts down the computer</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">shutdown</p>
+            </div>
+
+            <div class="row mt-5">
+              <h3 align="left" id="restart">restart</h3>
+              <p class="lead">Restarts the computer</p>
+              <p style="font-size: 20px; font-weight: 400;">Further parameters:</p>
+              <p class="lead">None</p>
+              <p style="font-size: 20px; font-weight: 400;">Example:</p>
+              <p class="lead">restart</p>
+            </div>
+
+
+
+
+
+
           </div>
-        </div>
-        <div class="row mt-5">
-          <h4 align="left"><b>Coming Soon</b></h4>
         </div>
   </div>
     <footer class="text-center mt-5">
